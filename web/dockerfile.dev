@@ -1,0 +1,25 @@
+ARG NODE_VERSION=20.12.0
+
+FROM node:${NODE_VERSION}-slim as base
+ENV PNPM_HOME="/pnpm"
+ENV PATH="$PNPM_HOME:$PATH"
+RUN corepack enable
+
+
+ENV NODE_ENV=development
+
+WORKDIR /src
+
+# Build
+FROM base as build
+WORKDIR /src
+
+COPY --link package.json pnpm-lock.yaml ./
+RUN pnpm install
+
+# Run
+FROM base
+
+COPY --from=build /src/node_modules /src/node_modules
+
+CMD [ "pnpm", "run", "dev" ]
