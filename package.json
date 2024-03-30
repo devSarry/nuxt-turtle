@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "typegen": "pocketbase-typegen --db pb/data/data.db -o web/server/types/pocketbase-types.ts"
+  },
+  "dependencies": {
+    "pocketbase-typegen": "^1.2.1"
+  }
+}
