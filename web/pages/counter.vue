@@ -1,8 +1,10 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { UserGreating } from '~/components/UserGreeting.vue';
+</script>
 
 <template>
   <div>
-    Page: counter as
+    <UserGreating />    
   </div>
 </template>
 
