@@ -1,3 +1,5 @@
 pb/data/data.db
 
 node_modules/
+
+web/.pnpm-store
