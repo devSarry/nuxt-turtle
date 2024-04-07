@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { UserGreating } from '~/components/UserGreeting.vue';
+import UserGreating from '../components/UserGreeting.vue';
 </script>
 
 <template>

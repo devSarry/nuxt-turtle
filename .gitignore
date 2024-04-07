@@ -3,3 +3,5 @@ pb/data/data.db
 node_modules/
 
 web/.pnpm-store
+pb/data/data.db
+pb/data/logs.db

@@ -22,15 +22,14 @@ services:
       interval: 5s
       timeout: 5s
       retries: 5
-  web:
-    build:
-      context: ./web
-      dockerfile: dockerfile.dev
-    ports:
-      - "3000:3000"
-      - "24678:24678"
-    volumes:
-      - ./web:/src
-      - ./web/node_modules:/src/node_modules
-
-
+  # web:
+  #   build:
+  #     context: ./web
+  #     dockerfile: dockerfile.dev
+  #   ports:
+  #     - "3000:3000"
+  #     - "24678:24678"
+  #   volumes:
+  #     - ./web:/src
+  #   command: sh -c "pnpm install && pnpm run dev"
+ 
