@@ -9,7 +9,7 @@ export const pbClient = pb;
 
 export const UserCollection = pb.collection<UsersResponse>(Collections.Users);
 
-export const CounterCollection = pb.collection<CountsRecord>(Collections.Counts);
+export const CounterCollection = pb.collection<CountsResponse>(Collections.Counts);
 
 export const CreateCount = async (user_id: string) => {
     const count = await CounterCollection.create<CountsResponse>({ user_id, value: 0 });
