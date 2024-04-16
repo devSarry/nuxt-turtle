@@ -5,3 +5,11 @@ node_modules/
 web/.pnpm-store
 pb/data/data.db
 pb/data/logs.db
+
+.idea/copilot/chatSessions/00000000000.xd
+
+.idea/copilot/chatSessions/blobs/version
+
+.idea/copilot/chatSessions/xd.lck
+
+.idea/workspace.xml
